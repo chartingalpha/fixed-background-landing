@@ -1,0 +1,53 @@
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9 only
+          transform: translate(@x, @y);
+}
+
+html, body {
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  padding: 10px 0;
+}
+
+.featurette {
+  // color: @white;
+  min-height: 100%;
+  position: relative;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: @light;
+  }
+
+  &:nth-of-type(even) {
+    background-color: #3498db;
+    color: @white;
+  }
+
+  &:nth-last-of-type(1) {
+    background: @white;
+    text-align: center;
+
+    .container {
+      margin-top: 50px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  }
+
+}
