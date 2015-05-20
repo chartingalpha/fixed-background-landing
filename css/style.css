@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
 }
+header .navbar {
+  margin-bottom: 0;
+}
 footer {
   text-align: center;
   color: #999;
